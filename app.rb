@@ -1,6 +1,14 @@
 require 'sinatra'
 require 'pry'
 
+class Log
+  include DataMapper::Resource
+  property :id, Serial
+  property :title, String
+  property :body, Text
+  property :created_at, DateTime
+end
+
 @@logs =["testy","tosty","tasty"]
 
 get '/about' do
@@ -8,7 +16,12 @@ get '/about' do
 end
 
 get '/' do
+	# DÉFINIR LA VARIABLE @LOGS
 	erb :vueindex
+end
+
+post'/vueindex' do
+	binding.pry
 end
 
 post '/' do
