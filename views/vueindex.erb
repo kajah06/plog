@@ -1,0 +1,27 @@
+<div id="col-md-12">
+	<div id ="titre">
+		<h1>1er test de Kévin et Manue</h1>
+	</div>
+<% @@logs.each do |log| %>
+	<p><%=log%></p>
+<% end %>
+<form method="post" action="/vueindex" >
+	<div id="nom/prenom">
+		<p>Nom/Prénom:<p>
+		<input type="text" oval="Nom/Prénom*" name="nom/prenom" placeholder="Nom/Prénom*" required="required">
+	</div>
+	<div id="mail">
+		<p>Mail:<p>
+		<input type="text" oval="Mail*" name="Mail" placeholder="Mail*" required="required">
+	</div>
+	<div id="message">
+		<p>Message:<p>
+		<textarea oval="Message*" name="message" placeholder="Message*" required="required"></textarea>
+	</div>
+	<div id="publier">
+		<input type="submit" name="log" value="Publier">
+</div>
+
+</form>
+
+	
