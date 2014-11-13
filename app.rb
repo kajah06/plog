@@ -18,11 +18,14 @@ get '/about' do
 end
 
 get '/' do
-	@@logs << params[:log]
+	# DÉFINIR LA VARIABLE @LOGS
 	erb :vueindex
 end
 
-
+post '/' do
+	@@logs << params[:log]
+	erb :vueindex
+end
 
 #post'/vueindex' do
   #binding.pry
