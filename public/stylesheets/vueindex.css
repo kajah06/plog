@@ -1,24 +1,61 @@
 body
 {
-    background-color: #BFBFBF;
+    background-image:-moz-linear-gradient(#E1E0DD, #64635C);
+
 }
-#col-md-12{
+
+h1
+{
+	background:-moz-linear-gradient(#9DE8FE, #0089B3);
+	color: #FE0000;
+}
+
+h2,h3
+{
+	color: #FE0000;
+}
+#bande_horizontale{
+	padding: 0px;
+	margin-right: 110px;
+	margin-left: 110px;
+	margin-bottom: 25px;
+	border: none;
+	width: auto;
+	height: 1px;
+	background-color: #FA1C1C;
+}
+#vue{
 	margin: 20px 10px 20px 10px;
 	text-align: center;
 	font-family: lora;
-
-
 }
+
 #titre{
 	text-align: center;
 	margin-bottom: 60px;
-
 }
-#button
+
+#publier
 {
-	background-color: #00D3F3; 
 	text-align: center;
 	margin: 5px 0px 5px 0px;
-	border-radius: 5px;
+	border-radius: 50%;
+	background-color: #FE0000
+;
+	height: 45px;
 }
+
+#col-md-6
+{
+	text-align: left;
+}
+
+.bloc2
+{
+	width: auto; 
+	height: 80px;
+	display: block;
+}
+
+
 

@@ -1,27 +1,83 @@
-<div id="col-md-12">
+<div id="vue">
 	<div id ="titre">
-		<h1>1er test de Kévin et Manue</h1>
+		<div id ="bande_horizontale">
+</div>
+		<h1>1er plog de Kévin et Manue</h1>
 	</div>
-<% @@logs.each do |log| %>
-	<p><%=log%></p>
-<% end %>
+<div class="container">
+	<div class="row">
+
+<div id="bloc2">
+	<div class="col-md-6">
+		<h2>Les étapes de notre plog</h2>
+	<h3>Nous avons installé:</h3>
+		<p>
+		<li>Sinatra</li>
+		<li>Rubygem</Li>
+		<li>HTML</li> 
+		<li>Data_mapper</li>
+		<li>CSS</li>
+		<li>Boostrap</li>
+		<li>Le formulaire</li>
+		<li>Bouton</li>
+		<li>Enregistrement des messages</li>
+		<li>Suppression des messages</li>
+		<li>Modification des messages</li>
+	</p>
+	<h3>Nous avons bloqué sur:</h3> 
+	<p>
+		<li>Sinatra</li>
+		<li>Les routes</li>
+		<li>L'intégration des bases de données</li>
+		<li>La compréhension des variables</li>
+		<li>Le formulaire</li>
+		<li>Suppression des messages</li>
+		<li>Modification des messages</li>
+	</p>
+	<h3>Nos méthodes pour débloquer</h3>
+	<p>
+		<li></li>
+		<li></li>
+		<li></li>
+	<p>
+	</div>
+	<div class="col-md-6">
+
 <form method="post" action="/vueindex" >
 	<div id="nom/prenom">
 		<p>Nom/Prénom:<p>
-		<input type="text" oval="Nom/Prénom*" name="nom/prenom" placeholder="Nom/Prénom*" required="required">
+		<input type="text" oval="Nom/Prénom*" name="nom" placeholder="Nom/Prénom*" required="required">
 	</div>
 	<div id="mail">
 		<p>Mail:<p>
-		<input type="text" oval="Mail*" name="Mail" placeholder="Mail*" required="required">
+		<input type="text" oval="Mail*" name="email" placeholder="Mail*" required="required">
 	</div>
 	<div id="message">
 		<p>Message:<p>
 		<textarea oval="Message*" name="message" placeholder="Message*" required="required"></textarea>
 	</div>
-	<div id="publier">
-		<input type="submit" name="log" value="Publier">
+	<div>
+		<input id="publier" type="submit" value="Publier">
+	</div>
+	</div>
+	<div class="row">
+	<div class="jumb">
+<% @logs.each do |log| %>
+	<p><%= log.nom %></p>
+	<p><%= log.email %></p>
+	<p><%= log.message %></p>
+	<p><%= log.id %></p>
+	<a href="/delete/<%= log.id %>">Supprimé</a>
+	<a href="/update/<%= log.id %>">Modifié</a>
+<% end %>
+</div>
+</div>
+	
 </div>
 
 </form>
 
-	
+</div>
+</div>	
+<div id ="bande_horizontale">
+</div>
