@@ -1,6 +1,7 @@
 body
 {
-    background-image:-moz-linear-gradient(#E1E0DD, #64635C);
+	color: black;  
+	background-color: black;  
 
 }
 
@@ -68,11 +69,7 @@ h2,h3
 	background-color: purple;
 
 }
-.jumb
-{
-	text-align: left;
-	background-color: purple;
-}
+
 
 
 
