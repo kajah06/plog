@@ -28,6 +28,7 @@ h2,h3
 	margin: 20px 10px 20px 10px;
 	text-align: center;
 	font-family: lora;
+	background-color: purple;
 }
 
 #titre{
@@ -48,6 +49,9 @@ h2,h3
 #col-md-6
 {
 	text-align: left;
+	border-radius: 5px black;
+	
+
 }
 
 .bloc2
@@ -55,6 +59,19 @@ h2,h3
 	width: auto; 
 	height: 80px;
 	display: block;
+	text-align: left;
+}
+
+#row
+{
+	text-align: left;
+	background-color: purple;
+
+}
+.jumb
+{
+	text-align: left;
+	background-color: purple;
 }
 
 
